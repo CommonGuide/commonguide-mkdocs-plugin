@@ -1,0 +1,26 @@
+[project]
+name = "commonguide-mkdocs-plugin"
+version = "0.0.1"
+authors = [
+  { name="Moxvallix", email="dev@moxvallix.com" },
+]
+description = "Mkdocs plugin powering the Common Guide."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: MkDocs",
+]
+license = "LGPL-3.0-or-later"
+license-files = ["LICENCE.md"]
+
+[project.urls]
+Homepage = "https://github.com/commonguide/commonguide-mkdocs-plugin"
+Issues = "https://github.com/commonguide/commonguide-mkdocs-plugin/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project.entry-points."mkdocs.plugins"]
+commonguide-mkdocs-plugin = "commonguide_mkdocs_plugin.plugin:CommonGuidePlugin"
